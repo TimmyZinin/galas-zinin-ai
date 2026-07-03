@@ -24,7 +24,7 @@
   ::selection{background:var(--red);color:#fff}
   a{color:inherit}
   .wrap{max-width:1200px;margin:0 auto;padding-left:24px;padding-right:24px}
-  .h{font-family:var(--head);font-weight:400;text-transform:uppercase;letter-spacing:-.01em;color:var(--ink)}
+  .h{font-family:var(--head);font-weight:400;text-transform:uppercase;letter-spacing:-.01em;color:var(--ink);overflow-wrap:break-word}
   .mono{font-family:var(--mono)}
   .sp{letter-spacing:.3em;text-transform:uppercase}
   .tag{font-family:var(--mono);font-size:12px;letter-spacing:.3em;text-transform:uppercase;display:flex;flex-wrap:wrap;align-items:center;row-gap:8px;gap:16px;margin-bottom:26px}
@@ -57,6 +57,7 @@
   .lang{display:inline-flex;border:2px solid var(--ink)}
   .lang span,.lang a{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.15em;padding:5px 12px;text-decoration:none}
   .lang .on{background:var(--ink);color:#fff}
+  .partner-badge{font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;background:var(--red);color:#fff;padding:6px 12px;white-space:normal}
   /* metrics */
   .metrics{display:grid;grid-template-columns:repeat(4,1fr);background:var(--ink);gap:2px;border:2px solid var(--ink);box-shadow:8px 8px 0 var(--red)}
   .metric{background:#fff;padding:30px 26px;display:flex;flex-direction:column;gap:8px}
@@ -178,6 +179,7 @@
 <div class="topbar" data-screen-label="Topbar">
   <div class="wrap in">
     <a class="brand" href="#top"><span class="sq"></span>ЗИНИН И ПАРТНЁРЫ</a>
+    <span class="partner-badge">ZININ.AI × ГАЛАС — ПАРТНЁРСКАЯ ВИТРИНА</span>
     <div class="meta">
       <span>ИИ-ПРАКТИКА · ТУРЦИЯ · 2026</span>
       <span class="lang"><a href="/" class="on">RU</a><a href="/en/">EN</a></span>
@@ -189,7 +191,7 @@
 <section id="top" data-screen-label="Hero">
   <div class="wrap sec" style="position:relative">
     <div class="tag"><b>01</b><span>·</span><span class="sp">ПАРТНЁРСТВО</span><span class="rule"></span><span style="letter-spacing:.2em;opacity:.6">ТУРЦИЯ · РУССКОЯЗЫЧНЫЙ БИЗНЕС</span></div>
-    <h1 class="h" style="font-size:clamp(46px,8.4vw,116px);line-height:.92;margin:0 0 34px">ZININ.AI&nbsp;<span style="color:var(--red)">×</span><br>ГАЛАС</h1>
+    <h1 class="h" style="font-size:clamp(30px,6vw,80px);line-height:.98;margin:0 0 34px">ИИ-грамотность<br>для предпринимателей</h1>
     <div style="display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(24px,4vw,56px);align-items:start" class="herosplit">
       <div>
         <p style="margin:0 0 16px;font-size:clamp(19px,2vw,26px);line-height:1.35;font-weight:600;max-width:34ch">Обучаем вас и команду работать с ИИ и собираем ИИ-агентов под ключ — для бизнеса в Турции.</p>
